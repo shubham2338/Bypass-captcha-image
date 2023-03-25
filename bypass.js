@@ -33,6 +33,6 @@ const api = 'api key'; // we paste api key here
 const solver = new Captcha.Solver(api);
 
 solver
-    .imageCaptcha(fs.readFileSync('./it.png', 'base64')) 
+    .imageCaptcha(fs.readFileSync('./it.png', 'base64'))
     .then((res) => { console.log(res); })
     .catch((err) => {  console.log(err); });
